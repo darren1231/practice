@@ -25,6 +25,8 @@ class scraper_stock(object):
         Retrun:
             data: pandas datafram
         """
+        a=10
+
         url = website_url.format(year,month,stock_code)
         data = pd.read_html(url)[0]
         
@@ -45,14 +47,13 @@ class scraper_stock(object):
         Return:
             pd_table: pandas datafram
         """
-        
+        b=100
+
         start_year = start_date[0]
         start_month = start_date[1]
         
         end_year = end_date[0]
         end_month = end_date[1]
-        
-        
         
         data_list=[]
         for year in range(end_year,start_year-1,-1):
