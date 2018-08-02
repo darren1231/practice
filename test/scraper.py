@@ -27,8 +27,7 @@ class scraper_stock(object):
         """
         ll=900
         a=10
-        test = 50
-        
+
         url = website_url.format(year,month,stock_code)
         data = pd.read_html(url)[0]
         
