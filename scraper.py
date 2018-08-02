@@ -9,6 +9,7 @@ class scraper_stock(object):
     
     def __init__(self):
         b=100
+        a=10
         pass
         
     def fetch_single_table(self,website_url,year,month,stock_code):
